@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include <SDL.h>
+#include "SDL.h"
 #include "TextureManager.h"
 
 class Game
@@ -23,7 +23,9 @@ private:
 	//SDL_Rect m_destinationRectangle;
 	SDL_Window * m_pWindow;
 	SDL_Renderer*m_pRenderer;
-	TextureManager m_textureManager;
+	//TextureManager m_textureManager;
 	int m_currentFrame;
+	int m_currentFrame2;
+
 	bool m_bRunning;
 };
