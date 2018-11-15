@@ -8,7 +8,7 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 	{
 
 
-		m_pWindow = SDL_CreateWindow("PP10.Polymorphism",
+		m_pWindow = SDL_CreateWindow("PP12.Vector2D",
 
 			SDL_WINDOWPOS_CENTERED,
 			SDL_WINDOWPOS_CENTERED,
@@ -31,8 +31,8 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 
 	SDL_SetRenderDrawColor(m_pRenderer, 200, 200, 255, 100);
 
-	m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 128, 82, "animate")));
-	m_gameObjects.push_back(new Enemy(new LoaderParams(300, 300, 128, 82, "animate")));
+	m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 43, 110, "animate")));
+	m_gameObjects.push_back(new Enemy(new LoaderParams(300, 300, 43, 110, "animate")));
 
 
 	m_bRunning = true;
