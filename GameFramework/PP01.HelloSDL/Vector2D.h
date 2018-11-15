@@ -63,6 +63,7 @@ private:
 
 	float length() { return sqrt(m_x * m_x + m_y * m_y); }
 
+
 	void normalize()
 	{
 		float l = length();
@@ -72,3 +73,4 @@ private:
 		}
 	}
 };
+

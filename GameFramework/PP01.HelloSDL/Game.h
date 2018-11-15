@@ -16,6 +16,7 @@ public:
 	void handleEvents();
 	void clean();
 	bool running() { return m_bRunning; }
+	void quit();
 
 	static Game* Instance()
 	{
