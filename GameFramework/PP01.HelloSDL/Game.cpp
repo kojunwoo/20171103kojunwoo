@@ -10,7 +10,7 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 	{
 
 
-		m_pWindow = SDL_CreateWindow("PP12.Vector2D",
+		m_pWindow = SDL_CreateWindow("PP14.MInputHandler",
 
 			SDL_WINDOWPOS_CENTERED,
 			SDL_WINDOWPOS_CENTERED,
@@ -30,11 +30,15 @@ bool Game::init(const char*title, int xpos, int ypos, int width, int height, boo
 	TheTextureManager::Instance()->load("assets/dog sprite.png", "animate", m_pRenderer);
 	TheTextureManager::Instance()->load("assets/animate2-alpha.png", "animate2", m_pRenderer);
 	TheTextureManager::Instance()->load("assets/eyemonster.png", "animate3", m_pRenderer);
+	TheTextureManager::Instance()->load("assets/Bullet.png", "animate4", m_pRenderer);
+
 
 	SDL_SetRenderDrawColor(m_pRenderer, 200, 200, 255, 100);
 
 	m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 43, 110, "animate")));
 	m_gameObjects.push_back(new Enemy(new LoaderParams(300, 300, 43, 110, "animate")));
+
+
 
 
 	m_bRunning = true;
